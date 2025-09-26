@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.homepage-container {
+  align-content: center;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center; /* vertical */
+  height: 100vh;
+}
+
+.hero-section {
+  max-height: 200px;
+  display: inline-block;
+  background-color: #f2e0d2;
+  padding: 80px 30px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  gap: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.hero-section img {
+  max-width: 100px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: #f2afbc;
+  border: 0.5px solid black;
+}
+
+.container-2 {
+  align-content: center;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center; /* vertical */
+  height: 100vh;
+}
+
+.hero-2 {
+  max-height: 200px;
+  display: inline-block;
+  background-color: #f2e0d2;
+  padding: 80px 30px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  gap: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#letterForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#letterForm input,
+#letterForm textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.btn-2 {
+  border: 2px solid black;
+  padding: 10px;
+  width: auto; /* auto width instead of 100% */
+  align-self: center; /* center button horizontally */
+  padding: 6px 16px; /* smaller padding = smaller button */
+  font-size: 14px; /* optional: smaller text */
+  border-radius: 10px; /* optional: softer edges */
+  background-color: #f2afbc; /* optional: color */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
