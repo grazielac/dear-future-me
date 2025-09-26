@@ -1,14 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>client</title>
-    <link rel="stylesheet" href="src/style.css">
+    <title>Dear Future Me</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="main.js" defer></script>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <h1> Dear Future Me</h1>
+
+    <form id="letterForm">
+      <input type="text" name="name" placeholder="your name" required />
+      <input type="email" name="email" placeholder="your email" required />
+      <textarea name="message" placeholder="your message" required></textarea>
+      <button type="submit">Send Letter</button>
+    </form>
+    
   </body>
 </html>
