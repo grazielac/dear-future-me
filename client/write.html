@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="./src/main.js" defer></script>
+  </head>
+  <body>
+    <section class="nav-container">
+      <div class="nav-bar">
+        <h1>Dear future me</h1>
+      </div>
+    </section>
+
+    <div class="container-2">
+      <div class="hero-2">
+        <h2>Write a letter page</h2>
+
+        <form id="letterForm">
+          <div class="form-group">
+            <input
+              type="text"
+              name="name"
+              placeholder="your name"
+              class="name"
+              required
+            />
+            <span class="error" id="nameError"></span>
+          </div>
+
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              placeholder="your email"
+              required
+            />
+            <span class="error" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <textarea
+              name="message"
+              placeholder="your message"
+              required
+            ></textarea>
+            <span class="error" id="messageError"></span>
+          </div>
+
+          <button type="submit" class="btn-2">Send Letter</button>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <h2>Dear Future me</h2>
+      <nav>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="read.html">Read Letters</a></li>
+          <li><a href="write.html">Write Letter</a></li>
+        </ul>
+
+        <h2>Sign up</h2>
+        <form>
+          <input type="text" name="sub-email" placeholder="your email">
+          <button type="submit" class="sub-btn">Submit</button>
+        </form>
+      </nav>
+      <p>© 2025 Dear Future Me. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

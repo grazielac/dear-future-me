@@ -50,7 +50,7 @@
   display: flex;
   justify-content: center; /* horizontal */
   align-items: center; /* vertical */
-  height: 100vh;
+  height: 80vh;
 }
 
 .hero-2 {
@@ -97,4 +97,11 @@
   color: white;
   border: none;
   cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+  display: block;
+  margin-top: 4px;
 }
