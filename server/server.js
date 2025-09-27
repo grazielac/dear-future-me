@@ -16,26 +16,6 @@ const app = express();
 app.use(express.json());
 app.use(cors()); // allows our server to talk to other servers
 
-// set VIEW EJS engine
-// AI used to set this up
-//tells express to use ejs templates from the /views folder
-app.set("view engine", "ejs");
-app.set("views", "./views"); //folder for your EJS templates
-
-app.use(express.static("public"));
-
-app.get("/about", (req, res) => {
-  res.render("pages/about"); // this will include header + footer
-});
-
-app.get("/read", (req, res) => {
-  res.render("pages/read"); // this will include header + footer
-});
-
-app.get("/write", (req, res) => {
-  res.render("pages/write"); // this will include header + footer
-});
-
 // set up database connection
 const db = new pg.Pool({
   connectionString: process.env.DB_CONN, // gets your DB connection string from .env
