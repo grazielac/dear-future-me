@@ -2,57 +2,54 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dear Future Me</title>
     <link rel="stylesheet" href="src/style.css" />
-    <script src="./src/main.js" defer></script>
   </head>
   <body>
-    <section class="nav-container">
-      <div class="nav-bar">
-        <h1>Dear future me</h1>
+
+    <!--HEADER-->
+    <header>
+      <div class="header-wrapper">
+        <div class="header">
+          <div class="main-menu">
+            <div class="main-links">
+              <nav>
+                <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/about">About</a></li>
+                  <li><a href="/read">Read Letters</a></li>
+                  <li><a href="/write">Write Letter</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <img src="" alt="logo" class="header-logo" />
+          <div class="header-utility-links">
+            <div class="search">
+              <button class="search-btn">
+                <img src="image/search.png" alt="search" />
+              </button>
+            </div>
+            <div class="account">
+              <button class="account-btn">
+                <img src="image/account.png" alt="account" />
+              </button>
+            </div>
+            <div class="dashboard">
+              <button class="dash-btn">
+                <img src="image/dashboard.png" alt="dashboard" />
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </header>
+    <!--END HEADER-->
 
-    <div class="container-2">
-      <div class="hero-2">
-        <h2>Write a letter page</h2>
 
-        <form id="letterForm">
-          <div class="form-group">
-            <input
-              type="text"
-              name="name"
-              placeholder="your name"
-              class="name"
-              required
-            />
-            <span class="error" id="nameError"></span>
-          </div>
-
-          <div class="form-group">
-            <input
-              type="email"
-              name="email"
-              placeholder="your email"
-              required
-            />
-            <span class="error" id="emailError"></span>
-          </div>
-
-          <div class="form-group">
-            <textarea
-              name="message"
-              placeholder="your message"
-              required
-            ></textarea>
-            <span class="error" id="messageError"></span>
-          </div>
-
-          <button type="submit" class="btn-2">Send Letter</button>
-        </form>
-      </div>
-    </div>
+     <!--FOOTER-->
     <footer>
       <div class="footer-container">
         <div class="nav-footer">
@@ -76,7 +73,10 @@
                 class="form-row"
               />
               <button type="submit" class="sub-btn">Join the journey</button>
-              <p class="signup-note">By subscribing, you agree to recieve marketing email messages from DFM at the email address provided. Unsubscribe at any time. </p>
+              <p class="signup-note">
+                By subscribing, you agree to recieve marketing email messages
+                from DFM at the email address provided. Unsubscribe at any time.
+              </p>
             </form>
           </div>
         </div>
@@ -92,5 +92,3 @@
         </div>
       </div>
     </footer>
-  </body>
-</html>
