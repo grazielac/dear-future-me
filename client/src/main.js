@@ -37,7 +37,7 @@ form.addEventListener("submit", async function (event) {
   // MESSAGE CHECK: min 20 words, max 100 words
   const words = message.split(" ").filter((word) => word !== "");
   // splits the mssage string intro an array of words using space as seperator
-  if (words.length < 20) {
+  if (words.length < 5) {
     // counts how many words are in the array
     messageError.textContent = "Write at least 20 words."; // if user wrote less than 5
     error = true;

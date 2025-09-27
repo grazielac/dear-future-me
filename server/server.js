@@ -4,6 +4,7 @@ import express from "express"; // imports the express library
 import pg from "pg"; // imports PostgreSQL client library
 import dotenv from "dotenv"; // loads secret environment variables from .env into process.env
 import cors from "cors";
+import path from "path";
 
 dotenv.config(); // loads .env file
 
@@ -14,6 +15,26 @@ const app = express();
 // so our server can read json
 app.use(express.json());
 app.use(cors()); // allows our server to talk to other servers
+
+// set VIEW EJS engine
+// AI used to set this up
+//tells express to use ejs templates from the /views folder
+app.set("view engine", "ejs");
+app.set("views", "./views"); //folder for your EJS templates
+
+app.use(express.static("public"));
+
+app.get("/about", (req, res) => {
+  res.render("pages/about"); // this will include header + footer
+});
+
+app.get("/read", (req, res) => {
+  res.render("pages/read"); // this will include header + footer
+});
+
+app.get("/write", (req, res) => {
+  res.render("pages/write"); // this will include header + footer
+});
 
 // set up database connection
 const db = new pg.Pool({

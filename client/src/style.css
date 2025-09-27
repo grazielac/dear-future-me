@@ -6,14 +6,28 @@
 
 /* HEADER NAV BAR */
 
-.header-utility-links button img {
-  max-width: 200px;
+.header {
+  display: flex;
+  justify-content: space-between;
 }
 
+.main-links ul {
+  display: flex;
+}
 
+.header-utility-links button img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  display: block;
+  border: 0px;
+  cursor: pointer;
+}
 
-
-
+.header-utility-links {
+  display: flex;
+  gap: 20px;
+}
 
 .homepage-container {
   align-content: center;
