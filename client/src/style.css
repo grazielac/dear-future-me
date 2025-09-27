@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  color: #392423;
 }
 
 .homepage-container {
@@ -88,12 +89,12 @@
 .btn-2 {
   border: 2px solid black;
   padding: 10px;
-  width: auto; /* auto width instead of 100% */
-  align-self: center; /* center button horizontally */
-  padding: 6px 16px; /* smaller padding = smaller button */
-  font-size: 14px; /* optional: smaller text */
-  border-radius: 10px; /* optional: softer edges */
-  background-color: #f2afbc; /* optional: color */
+  width: auto;
+  align-self: center;
+  padding: 6px 16px;
+  font-size: 14px;
+  border-radius: 10px;
+  background-color: #f2afbc;
   color: white;
   border: none;
   cursor: pointer;
@@ -104,4 +105,98 @@
   font-size: 0.8rem;
   display: block;
   margin-top: 4px;
+}
+
+.form-form h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* FOOTER STYLE */
+
+.footer-container {
+  background-color: #ece1c9;
+  display: flex;
+  justify-content: space-around;
+}
+
+li,
+li a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+ul a {
+  gap: 20px;
+}
+
+.nav-footer {
+  margin-top: 45px;
+}
+
+.nav-footer h4 {
+  padding-bottom: 20px;
+}
+
+.nav-footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.sub-btn {
+  background-color: #db7c84;
+  border-radius: 20px;
+  border-style: none;
+  border-width: 2px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  align-self: flex-end;
+  cursor: pointer;
+  pointer-events: auto;
+  height: 40px;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid gray;
+  border-radius: 0;
+}
+
+input[type="email"] {
+  text-align: center; /* centers placeholder and typed text */
+}
+
+.form-form h2 {
+  letter-spacing: 0.03em;
+  line-height: 130%;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  color: #2d2a38;
+}
+
+.footer-container {
+  padding-bottom: 40px;
+}
+
+.footer-policy ul {
+  display: flex;
+  gap: 50px;
+  align-items: flex-end;
 }
