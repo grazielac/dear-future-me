@@ -4,6 +4,17 @@
   color: #392423;
 }
 
+/* HEADER NAV BAR */
+
+.header-utility-links button img {
+  max-width: 200px;
+}
+
+
+
+
+
+
 .homepage-container {
   align-content: center;
   background-color: antiquewhite;
@@ -107,6 +118,10 @@
   margin-top: 4px;
 }
 
+.signup-form {
+  max-width: 500px;
+}
+
 .form-form h2 {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -117,6 +132,7 @@
   background-color: #ece1c9;
   display: flex;
   justify-content: space-around;
+  padding-top: 20px;
 }
 
 li,
@@ -199,4 +215,10 @@ input[type="email"] {
   display: flex;
   gap: 50px;
   align-items: flex-end;
+  cursor: pointer;
+}
+
+.signup-note {
+  font-size: 12px;
+  font-style: italic;
 }
