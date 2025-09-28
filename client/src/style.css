@@ -260,10 +260,6 @@ ul a {
   border-radius: 0;
 }
 
-input[type="email"] {
-  text-align: center; /* centers placeholder and typed text */
-}
-
 .form-form h2 {
   letter-spacing: 0.03em;
   line-height: 130%;
@@ -311,4 +307,38 @@ input[type="email"] {
   background-color: #ede3ca;
   transform: translateY(-2px);
   transition: all 0.2s ease;
+}
+
+/* TEXTAREA BOX */
+
+textarea {
+  width: 100%;
+  border: 1px solid #E2A990;
+  border-radius: 8px;
+  background-color: #f2f3ec;
+  color: #421A0D;
+  resize: vertical;
+  box-sizing: border-box;
+  min-height: 150px;
+  padding: 12px 15px;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #f2afbc;
+  box-shadow: 0 0 5px rgba(226, 169, 144, 0.4);
+}
+
+.form-group input {
+  width: 100%;
+  border: 1px solid #E2A990;
+  border-radius: 8px;
+  color: #421A0D;
+}
+
+/* LETTERS CARD */
+
+.handpicked-letters-cta {
+  display: flex;
+  justify-content: space-between;
 }
