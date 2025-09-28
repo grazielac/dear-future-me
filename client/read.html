@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dear Future Me</title>
     <link rel="stylesheet" href="src/style.css" />
-
+    <script src="src/main.js" defer></script>
   </head>
   <body>
     <!--HEADER-->
@@ -47,6 +47,8 @@
       </div>
     </header>
     <!--END HEADER-->
+
+    <ul id="lettersList"></ul>
 
     <!--FOOTER-->
     <footer>
@@ -91,5 +93,34 @@
         </div>
       </div>
     </footer>
+
+<script>
+  // GET DATA FROM THE SERVER and display it in the page
+async function loadLetters() {
+  try {
+    // call server GET route
+    const res = await fetch("http://localhost:3000/letters"); // sends a GET request to backend at /letters
+    const letters = await res.json(); // response body converts from json -> javascript object/array
+
+    // find the container
+    const list = document.getElementById("lettersList");
+    list.innerHTML = ""; // clear old content
+
+    // display each letter into the page
+    letters.forEach((letter) => {
+      const li = document.createElement("li");
+      li.textContent = `${letter.name}: ${letter.message}`; // show name + message
+      list.appendChild(li); // add li into the list
+    });
+  } catch (error) {
+    console.error("Error fetching letters:", error);
+  }
+  console.log(list);
+}
+
+loadLetters(); // run the function when the page loads
+
+</script>
+
   </body>
 </html>

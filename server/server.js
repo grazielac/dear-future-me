@@ -35,6 +35,7 @@ app.get("/letters", async (req, res) => {
 });
 
 //POST new letter
+// it listens for upcoming post requests from frontend
 app.post("/letters", async (req, res) => {
   try {
     console.log(req.body);
@@ -47,6 +48,7 @@ app.post("/letters", async (req, res) => {
         .json({ error: "Name, email, and message are required" });
     }
 
+      // route calling -- as soon as the server receives a POST, it will try to insert into your database (supabase)
     const result = await db.query(
       "INSERT INTO letters (name, email, message) VALUES ($1, $2, $3) RETURNING *",
       [name, email, message]

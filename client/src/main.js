@@ -94,6 +94,7 @@ async function loadLetters() {
   } catch (error) {
     console.error("Error fetching letters:", error);
   }
+  console.log(list);
 }
 
 loadLetters(); // run the function when the page loads

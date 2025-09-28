@@ -25,9 +25,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #db7c84;
+  background-color: #FCF6DC;
   height: 75px;
   padding: 0 60px;
+  
 }
 
 .main-links ul {
@@ -36,6 +37,10 @@
   gap: 30px;
   padding: 0;
   margin: 0;
+}
+
+.main-links a:hover {
+  color: #E2A990;
 }
 
 .header-utility-links button img {
@@ -82,7 +87,7 @@
 
 .homepage-container {
   align-content: center;
-  background-color: #ede3ca;
+  background-color: #FBF7F6;
   display: flex;
   justify-content: center; /* horizontal */
   align-items: center; /* vertical */
@@ -185,14 +190,10 @@
   max-width: 500px;
 }
 
-.form-form h2 {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 /* FOOTER STYLE */
 
 .footer-container {
-  background-color: #f2cfd1;
+  background-color: #EBEDD5;
   display: flex;
   justify-content: space-around;
   padding-top: 20px;
@@ -212,6 +213,10 @@ ul a {
   margin-top: 45px;
 }
 
+.nav-footer a {
+  color: #421A0D;
+}
+
 .nav-footer h4 {
   padding-bottom: 20px;
 }
@@ -225,12 +230,11 @@ ul a {
 }
 
 .sub-btn {
-  background-color: #db7c84;
+  background-color: #E2A990;
   border-radius: 20px;
   border-style: none;
   border-width: 2px;
   font-size: 12px;
-  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   align-self: flex-end;
   cursor: pointer;
