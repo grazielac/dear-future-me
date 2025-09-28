@@ -270,3 +270,10 @@ input[type="email"] {
   font-size: 12px;
   font-style: italic;
 }
+
+/* LIST DISPLAY */
+
+#lettersList {
+  padding: 0;
+  margin: 20px 0;
+}
