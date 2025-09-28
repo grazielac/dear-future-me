@@ -19,6 +19,10 @@
   color: #392423;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* HEADER NAV BAR */
 
 .header {
@@ -338,22 +342,36 @@ textarea:focus {
 
 /* LETTERS CARD */
 
+.featured-letters {
+  max-width: 100vw;
+}
+
 .handpicked-letters-cta {
   display: flex;
   justify-content: space-between;
 }
 
 .handpicked-letters-cards{
-  max-width: 100%;
+  max-width: 100%; 
   display: flex;
   gap: 5px;
   margin-left: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+}
 
+.letters-card {
+  flex: 0 0 auto;
+  width: 340px;
+  height: 450px;
+  scroll-snap-align: start;
 }
 
 .letters-card img {
-  height: 450px;
-  width: 340px;
+  width: 100%;
+  height: auto;
+  display: block;
   border-radius: 5px;
 
 }
