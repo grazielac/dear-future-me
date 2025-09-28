@@ -1,3 +1,18 @@
+/* mobile*/
+@media (min-width: 600px) {
+  #lettersList li {
+    padding: 20px 25px;
+  }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+  #lettersList li {
+    padding: 20px 30px;
+    font-size: 16px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -63,9 +78,11 @@
   cursor: pointer;
 }
 
+/* MAIN CONTAINER */
+
 .homepage-container {
   align-content: center;
-  background-color: #EDE3CA;
+  background-color: #ede3ca;
   display: flex;
   justify-content: center; /* horizontal */
   align-items: center; /* vertical */
@@ -103,20 +120,19 @@
   background-color: #f2afbc;
   border: 0.5px solid black;
 }
-
+/* WRITE PAGE */
 .container-2 {
   align-content: center;
   background-color: antiquewhite;
   display: flex;
   justify-content: center; /* horizontal */
   align-items: center; /* vertical */
-  height: 80vh;
+  height: 100vh;
 }
 
 .hero-2 {
   max-height: 200px;
   display: inline-block;
-  background-color: #f2e0d2;
   padding: 80px 30px;
   align-items: center;
   display: flex;
@@ -126,7 +142,6 @@
   height: 100vh;
   text-align: center;
   gap: 30px;
-  border: 1px solid black;
   border-radius: 10px;
 }
 
@@ -177,7 +192,7 @@
 /* FOOTER STYLE */
 
 .footer-container {
-  background-color: #F2CFD1;
+  background-color: #f2cfd1;
   display: flex;
   justify-content: space-around;
   padding-top: 20px;
@@ -276,4 +291,20 @@ input[type="email"] {
 #lettersList {
   padding: 0;
   margin: 20px 0;
+  max-width: 600px;
+}
+
+#lettersList li {
+  background-color: #db7c84;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 5px;
+  line-height: 1.4;
+}
+
+#lettersList li:hover {
+  background-color: #ede3ca;
+  transform: translateY(-2px);
+  transition: all 0.2s ease;
 }
