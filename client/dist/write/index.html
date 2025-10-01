@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lettura</title>
-
+    <title>Dear Future Me</title>
+    <link rel="stylesheet" href="src/style.css" />
     <script type="module" crossorigin src="/assets/main-DzrIegZ-.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/main-OBAklpj-.css">
   </head>
   <body>
     <!--HEADER-->
@@ -19,9 +18,9 @@
               <nav>
                 <ul>
                   <li><a href="/">Home</a></li>
-                  <li><a href="/about.html">About</a></li>
-                  <li><a href="/read.html">Read Letters</a></li>
-                  <li><a href="/write.html">Write Letter</a></li>
+                  <li><a href="/about">About</a></li>
+                  <li><a href="/read">Read Letters</a></li>
+                  <li><a href="/write">Write Letter</a></li>
                 </ul>
               </nav>
             </div>
@@ -49,45 +48,70 @@
     </header>
     <!--END HEADER-->
 
-    <!--HERO SECTION-->
-    <div class="homepage-container">
-      <div class="hero-section">
-        <h1>Dear Future Me</h1>
-        <img src="./image/envelope.png" alt="envelope" />
-        <p>Write a letter to your future self</p>
-        <a href="/write.html" class="btn">WRITE A LETTER</a>
+    <div class="journal-container">
+      <div class="journal-card">
+        <div class="journal-form"></div>
       </div>
     </div>
-    <!--END HERO-->
+    <div class="journal-container">
+      <div class="container-2">
+        <div class="hero-2">
+          <img src=".image/write.png" alt="write a letter" />
+          <h2>Write a letter</h2>
 
-    <!--FEATURED LETTERS-->
-    <section id="featured-container">
-      <div class="featured-letters">
-        <div class="handpicked-letters-cta">
-          <h3 class="label">Handpicked Letters</h3>
-          <a class="read-all" href="read.html" alt="Read All">Read All</a>
-        </div>
-        <div class="handpicked-letters-cards">
-          <div class="letters-card">
-            <img src="/assets/letter1-CI3bzgT1.jpg" />
-          </div>
-          <div class="letters-card">
-            <img src="/assets/letter2-_S6p5EaB.jpg" />
-          </div>
-          <div class="letters-card">
-            <img src="/assets/letter3-C1MgMqIe.jpg" />
-          </div>
-          <div class="letters-card">
-            <img src="/assets/letter4-Bb1dBQih.jpg" />
-          </div>
-          <div class="letters-card">
-            <img src="/assets/letter5-BDl-w5OK.jpg" />
-          </div>
+          <form id="letterForm">
+            <div class="form-group">
+              <label for="delivery-date">Who are you today?</label>
+              <input
+                type="text"
+                name="name"
+                placeholder="your name"
+                class="name"
+                required
+              />
+              <span class="error" id="nameError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="delivery-date">Where can the future find you?</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="your email"
+                required
+              />
+              <span class="error" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Dear future me...</label>
+              <textarea
+                name="message"
+                placeholder="your message"
+                required
+              ></textarea>
+              <span class="error" id="messageError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="delivery-date">Choose delivery date:</label>
+              <input
+                type="date"
+                id="delivery-date"
+                name="deliveryDate"
+                min="2025-09-29"
+                max="2025-12-31"
+                required
+              />
+              <span class="error" id="emailError"></span>
+            </div>
+            <button type="submit" class="btn-2">Send Letter</button>
+          </form>
         </div>
       </div>
-    </section>
-    <!--END FEATURED LETTERS-->
+    </div>
 
+    <!--FOOTER-->
     <footer>
       <div class="footer-container">
         <div class="nav-footer">
