@@ -1,4 +1,6 @@
 // custom code for frontend
+import './style.css';
+
 const form = document.getElementById("letterForm");
 const nameError = document.getElementById("nameError");
 const emailError = document.getElementById("emailError");
